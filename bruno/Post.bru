@@ -1,0 +1,19 @@
+meta {
+  name: Post
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/v1/socials/users
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username": "mock1",
+    "fullName": "Doe, Mock",
+    "email": "mock@mail.com"
+  }
+}
